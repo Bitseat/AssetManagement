@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="15sp"
+        android:textSize="15sp"
+        android:text="Computer Brand"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/computerSerial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5sp"
+        android:textSize="15sp"
+        android:text="Serial Number"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/serial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="2"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:background="@color/colorGreen"/>
+
+</LinearLayout>
