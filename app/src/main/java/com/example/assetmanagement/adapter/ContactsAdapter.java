@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.teapink.ocr_reader.R;
-import com.teapink.ocr_reader.activities.SaveToDatabaseActivity;
-import com.teapink.ocr_reader.db.entity.Contact;
+import com.example.assetmanagement.R;
+import com.example.assetmanagement.activities.SaveToDatabaseActivity;
+import com.example.assetmanagement.db.entity.Contact;
 
 import java.util.ArrayList;
 

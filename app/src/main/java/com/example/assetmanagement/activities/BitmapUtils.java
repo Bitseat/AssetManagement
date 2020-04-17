@@ -10,7 +10,7 @@ import android.support.v4.content.FileProvider;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
-import com.teapink.ocr_reader.R;
+import com.example.assetmanagement.R;
 
 import java.io.File;
 import java.io.FileOutputStream;

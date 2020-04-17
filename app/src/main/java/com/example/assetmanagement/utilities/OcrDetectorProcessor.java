@@ -19,7 +19,7 @@ import android.util.SparseArray;
 
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.TextBlock;
-import com.teapink.ocr_reader.ui.camera.GraphicOverlay;
+import com.example.assetmanagement.ui.camera.GraphicOverlay;
 
 /**
  * A very simple Processor which receives detected TextBlocks and adds them to the overlay

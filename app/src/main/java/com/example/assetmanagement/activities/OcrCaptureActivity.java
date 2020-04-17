@@ -43,12 +43,12 @@ import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
-import com.teapink.ocr_reader.R;
-import com.teapink.ocr_reader.ui.camera.CameraSource;
-import com.teapink.ocr_reader.ui.camera.CameraSourcePreview;
-import com.teapink.ocr_reader.ui.camera.GraphicOverlay;
-import com.teapink.ocr_reader.utilities.OcrDetectorProcessor;
-import com.teapink.ocr_reader.utilities.OcrGraphic;
+import com.example.assetmanagement.R;
+import com.example.assetmanagement.ui.camera.CameraSource;
+import com.example.assetmanagement.ui.camera.CameraSourcePreview;
+import com.example.assetmanagement.ui.camera.GraphicOverlay;
+import com.example.assetmanagement.utilities.OcrDetectorProcessor;
+import com.example.assetmanagement.utilities.OcrGraphic;
 
 import java.io.IOException;
 

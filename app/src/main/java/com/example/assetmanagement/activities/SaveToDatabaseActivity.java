@@ -25,11 +25,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.teapink.ocr_reader.R;
-import com.teapink.ocr_reader.adapter.ContactsAdapter;
-import com.teapink.ocr_reader.db.ContactsAppDatabase;
-import com.teapink.ocr_reader.db.entity.Contact;
-import com.teapink.ocr_reader.tensorflow.Logger;
+import com.example.assetmanagement.R;
+import com.example.assetmanagement.adapter.ContactsAdapter;
+import com.example.assetmanagement.db.ContactsAppDatabase;
+import com.example.assetmanagement.db.entity.Contact;
+import com.example.assetmanagement.tensorflow.Logger;
 
 import java.util.ArrayList;
 

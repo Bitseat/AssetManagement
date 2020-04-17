@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.teapink.ocr_reader.R;
+import com.example.assetmanagement.R;
 
 import java.io.File;
 import java.io.IOException;

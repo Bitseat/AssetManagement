@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.camerakit.CameraKitView;
-import com.teapink.ocr_reader.R;
+import com.example.assetmanagement.R;
 
 import java.io.IOException;
 import java.util.List;

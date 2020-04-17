@@ -17,7 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
-import com.teapink.ocr_reader.R;
+import com.example.assetmanagement.R;
 
 import org.tensorflow.lite.Interpreter;
 

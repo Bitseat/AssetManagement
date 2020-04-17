@@ -4,8 +4,7 @@ import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 
-import com.teapink.ocr_reader.tensorflow.Logger;
-
+//import com.example.assetmanagement.tensorflow.Logger;
 import org.tensorflow.lite.Interpreter;
 
 import java.io.FileInputStream;
@@ -17,13 +16,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
-import static com.teapink.ocr_reader.activities.GtsrbModelConfig.CLASSIFICATION_THRESHOLD;
-import static com.teapink.ocr_reader.activities.GtsrbModelConfig.IMAGE_MEAN;
-import static com.teapink.ocr_reader.activities.GtsrbModelConfig.IMAGE_STD;
-import static com.teapink.ocr_reader.activities.GtsrbModelConfig.INPUT_IMG_SIZE_HEIGHT;
-import static com.teapink.ocr_reader.activities.GtsrbModelConfig.INPUT_IMG_SIZE_WIDTH;
-import static com.teapink.ocr_reader.activities.GtsrbModelConfig.MAX_CLASSIFICATION_RESULTS;
-import static com.teapink.ocr_reader.activities.GtsrbModelConfig.MODEL_INPUT_SIZE;
+import static com.example.assetmanagement.activities.GtsrbModelConfig.CLASSIFICATION_THRESHOLD;
+import static com.example.assetmanagement.activities.GtsrbModelConfig.IMAGE_MEAN;
+import static com.example.assetmanagement.activities.GtsrbModelConfig.IMAGE_STD;
+import static com.example.assetmanagement.activities.GtsrbModelConfig.INPUT_IMG_SIZE_HEIGHT;
+import static com.example.assetmanagement.activities.GtsrbModelConfig.INPUT_IMG_SIZE_WIDTH;
+import static com.example.assetmanagement.activities.GtsrbModelConfig.MAX_CLASSIFICATION_RESULTS;
+import static com.example.assetmanagement.activities.GtsrbModelConfig.MODEL_INPUT_SIZE;
 
 public class GtsrbClassifier {
     private static final Logger LOGGER = new Logger();
