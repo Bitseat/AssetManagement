@@ -1,6 +1,7 @@
 package com.excellerent.assetmanagement.activities;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.ThumbnailUtils;
@@ -15,8 +16,11 @@ import android.widget.Toast;
 import com.camerakit.CameraKitView;
 import com.excellerent.assetmanagement.R;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.List;
+import java.util.Vector;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,6 +38,7 @@ public class DetectLogo extends AppCompatActivity {
     TextView serial;
 
     private GtsrbClassifier gtsrbClassifier;
+    private Vector<String> resVec = new Vector<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,7 +115,9 @@ public class DetectLogo extends AppCompatActivity {
         ivFinalPreview.setImageBitmap(preprocessedImage);
 
         List<Classification> recognitions = gtsrbClassifier.recognizeImage(preprocessedImage);
-        tvClassification.setText(recognitions.toString());
+        String res = "";
+        res = recognitions.get(0).toString();
+        tvClassification.setText(res.substring(0, res.indexOf("(")));
 
         //serial.setText(computer_serial);
 
@@ -121,5 +128,25 @@ public class DetectLogo extends AppCompatActivity {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         return displayMetrics.widthPixels;
+    }
+
+    private Vector<String> getResVec()
+    {
+        String actualFilename = "result.txt";
+        AssetManager assetManager =  getAssets();
+        Vector<String> vec = new Vector<String>();
+
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new InputStreamReader(assetManager.open(actualFilename)));
+            String line;
+            while ((line = br.readLine()) != null) {
+                vec.add(line);
+            }
+            br.close();
+        } catch (IOException e) {
+            throw new RuntimeException("Problem reading label file!" , e);
+        }
+        return vec;
     }
 }

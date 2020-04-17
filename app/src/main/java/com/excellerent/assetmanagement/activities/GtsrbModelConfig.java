@@ -18,16 +18,16 @@ public class GtsrbModelConfig {
     //This list can be taken from notebooks/output/labels_readable.txt 
     public static final List<String> OUTPUT_LABELS = Collections.unmodifiableList(
             Arrays.asList(
-                    "0",
-                    "1",
-                    "2",
-                    "3",
-                    "4",
-                    "5",
-                    "6",
-                    "7",
-                    "8",
-                    "9"
+                    "ACER",
+                    "APPLE",
+                    "DELL",
+                    "HP",
+                    "IBM",
+                    "LENOVO",
+                    "LG",
+                    "MICROSOFT",
+                    "SAMSUNG",
+                    "TOSHIBA"
             ));
 
     public static final int MAX_CLASSIFICATION_RESULTS = 3;
